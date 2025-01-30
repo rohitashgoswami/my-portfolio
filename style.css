@@ -18,7 +18,7 @@ header {
     background: #0078d7;
     color: #fff;
     text-align: center;
-    padding: 50px 0;
+    padding: 40px 0;
 }
 
 header h1 {
@@ -27,20 +27,19 @@ header h1 {
 }
 
 header p {
-    margin: 10px 0;
     font-size: 1.5rem;
 }
 
-header nav ul {
+nav ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0 0;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-header nav ul li a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
@@ -48,22 +47,20 @@ header nav ul li a {
     transition: background 0.3s;
 }
 
-header nav ul li a:hover,
-header nav ul li a:focus {
+nav ul li a:hover {
     background: #005bb5;
     border-radius: 5px;
 }
 
 section {
     padding: 60px 0;
-    border-bottom: 1px solid #ddd;
+    /* text-align: center; */
 }
 
-section h2 {
-    text-align: center;
-    margin-bottom: 25px;
+.container h2 {
     font-size: 2.5rem;
     color: #0078d7;
+    text-align: center;
 }
 
 #about p {
@@ -94,14 +91,12 @@ section h2 {
     background: #005bb5;
 }
 
-/* Project Section */
 #projects {
     text-align: center;
     padding: 50px 20px;
     background: #f8f8f8;
 }
 
-/* Project Wrapper using Flexbox */
 .projects-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -109,18 +104,17 @@ section h2 {
     gap: 30px;
 }
 
-/* Project Card Styling */
 .project-card {
     background: #fff;
     width: 520px;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px #0000004d;
     text-align: center;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
 }
 
-/* Image Styling */
 .project-card img {
     width: 100%;
     height: auto;
@@ -128,7 +122,6 @@ section h2 {
     margin-bottom: 15px;
 }
 
-/* Heading & Paragraph */
 .project-card h3 {
     font-size: 1.8rem;
     font-weight: bold;
@@ -140,7 +133,6 @@ section h2 {
     color: #444;
 }
 
-/* Button Styling */
 .project-card a {
     display: inline-block;
     margin-top: 10px;
@@ -159,9 +151,8 @@ section h2 {
     color: #fff;
 }
 
-/* GitHub Button */
 .github-btn {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .github-btn button {
@@ -179,9 +170,6 @@ section h2 {
     background: #0366d6;
 }
 
-
-
-/* Contact Section */
 #contact p {
     text-align: center;
     font-size: 1.2rem;
@@ -194,7 +182,7 @@ section h2 {
     background: #f9f9f9;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px #0000001a;
 }
 
 #contact .form-group {
@@ -222,7 +210,7 @@ section h2 {
 #contact .form-group textarea:focus {
     border-color: #0078d7;
     outline: none;
-    box-shadow: 0 0 5px rgba(0, 120, 215, 0.5);
+    box-shadow: 0 0 5px #0078d780;
 }
 
 #contact .form-group textarea {
@@ -245,40 +233,24 @@ section h2 {
 #contact button:hover {
     background: #005bb5;
 }
-
-/* Footer */
 footer {
     background: #333;
     color: #fff;
     text-align: center;
-    font-size: 1rem;
+    padding: 20px;
 }
 
-footer .social-icons {
-    margin-top: 10px;
-}
-
-footer .social-link {
+footer a {
     color: #0078d7;
     text-decoration: none;
-    margin: 0 10px;
-    font-size: 1.1rem;
-    transition: color 0.3s;
 }
 
-footer .social-link:hover {
+footer a:hover {
     color: #005bb5;
 }
 
-#back-to-top {
+.back-to-top {
     display: block;
-    margin-top: 15px;
-    color: #0078d7;
-    text-decoration: none;
+    margin-top: 10px;
     font-size: 1.2rem;
-}
-
-#back-to-top:hover {
-    color: #005bb5;
-    text-decoration: underline;
 }

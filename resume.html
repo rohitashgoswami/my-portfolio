@@ -1,86 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume</title>
-  <link rel="stylesheet" href="resume.css">
-</head>
-<body>
-  <div class="resume">
-    <div class="header">
-      <div class="name-role">
-        <h1>Rohitash Gar</h1>
-        <p>Front-End Developer</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="resume.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  </head>
+  <body>
+    <div class="resume" id="resume">
+      <div class="header">
+        <div class="name-role">
+          <h1>Rohitash Gar</h1>
+          <p>Front-End Developer</p>
+        </div>
+        <div class="profile-pic">
+          <img src="photos/profile.jpg" alt="Profile Picture" />
+        </div>
       </div>
-      <div class="profile-pic">
-        <img src="photos/profile.jpg" alt="Profile Picture">
-      </div>
-    </div>
 
-    <div class="content">
-      <div class="main">
-        <section>
-          <div class="education">
+      <div class="content">
+        <div class="main">
+          <section>
             <h2>Education</h2>
             <p><strong>Bachelor’s in Computer Applications (BCA)</strong></p>
             <p><em>Jaipur National University</em></p>
             <p>August 2023 - Present</p>
-          </div>
-          <div class="education">
-            <!-- <h2>Education</h2> -->
-            <p><strong>12th, High school Diploma and certificate, GOVT. sen. sec. school Malsar </strong></p>
+
+            <p>
+              <strong
+                >12th, High school Diploma - GOVT. Sen. Sec. School
+                Malsar</strong
+              >
+            </p>
             <p>June 2021</p>
-          </div>
-        </section>
+          </section>
 
-        <section>
-          <h2>Projects</h2>
-          <div class="project">
-            <h3><strong>SelfDriveCarz</strong></h3>
-            <p><em>December 2024</em></p>
-            <p>Developed a car rental website with features like real-time availability and booking management using ReactJS and Tailwind CSS.</p>
-          </div>
-          <div class="project">
-            <h3>Fabro Plus - E-Commerce Website</h3>
-            <p><em>November 2024</em></p>
-            <p> An e-commerce website specializing in
-          security and hardware solutions.</p>
-          </div>
-        </section>
-      </div>
+          <section>
+            <h2>Projects</h2>
+            <div class="project">
+              <h3><strong>SelfDriveCarz - Car Rental Website</strong></h3>
+              <p><em>December 2024</em></p>
+              <p>
+                Developed a car rental website with features like real-time
+                availability and booking management using ReactJS and Tailwind
+                CSS.
+              </p>
+            </div>
+            <div class="project">
+              <h3>Fabro Plus - E-Commerce Website</h3>
+              <p><em>November 2024</em></p>
+              <p>
+                An e-commerce website specializing in security and hardware
+                solutions.
+              </p>
+            </div>
+          </section>
 
-      <div class="sidebar">
-        <section>
-          <h2>Personal Information</h2>
-          <p><strong>Address:</strong> 254, Shiv Mandir RoadMalsar, Sardarshahar
-            Churu, Rajsthan(India).- 331411</p>
-          <p><strong>Phone:</strong> +91 7014266791</p>
-          <p><strong>E-mail:</strong> rockygoswami745@gmail.com</p>
-          <p><strong>LinkedIn:</strong> linkedin.com/in/rohitash-gar/</p>
-          <!-- <p><strong>Portfolio:</strong> [Your Portfolio URL]</p> -->
-        </section>
+          <section>
+            <h2>Certificates</h2>
+            <div class="quot">
+              <p>
+                I always believed that knowledge matters more than certificates,
+                so never tried to get much certificates but learned a lot from
+                people and free resources available on the internet.
+              </p>
+            </div>
+          </section>
+        </div>
 
-        <section>
-          <h2>Skills</h2>
-          <p><strong>Technical:</strong></p>
-          <ul>
-            <li>Programming: Python, C++</li>
-            <li>Frontend: ReactJS, Tailwind CSS, HTML5, CSS3, JavaScript</li>
-            <li>Tools: Git</li>
-          </ul>
-        </section>
+        <div class="sidebar">
+          <section>
+            <h2>Personal Information</h2>
+            <p>
+              <strong>Address:</strong> 254, Shiv Mandir Road, Malsar,
+              Sardarshahar, Churu, Rajasthan(India) - 331411
+            </p>
+            <p><strong>Phone:</strong> +91 7014266791</p>
+            <p><strong>E-mail:</strong> rockygoswami745@gmail.com</p>
+            <p><strong>LinkedIn:</strong> linkedin.com/in/rohitash-gar/</p>
+          </section>
 
-        <section>
-          <h2>Languages</h2>
-          <ul>
-            <li>English</li>
-            <li>Hindi: Fluent</li>
-          </ul>
-        </section>
+          <section>
+            <h2>Skills</h2>
+            <div class="skill">
+              <div class="skill-name">
+                <span>HTML5 & CSS3</span>
+                <span>90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-name">
+                <span>JavaScript</span>
+                <span>70%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 70%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-name">
+                <span>ReactJS</span>
+                <span>50%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 50%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-name">
+                <span>C++</span>
+                <span>75%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 75%"></div>
+              </div>
+            </div>
+
+            <div class="skills">
+              <div class="skill">
+                <div class="skill-name">
+                  <span>Python</span>
+                  <span>50%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 50%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-name">
+                  <span>Git & GitHub</span>
+                  <span>85%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Languages</h2>
+            <ul>
+              <li><strong>English</strong></li>
+              <li><strong>Hindi</strong></li>
+            </ul>
+          </section>
+        </div>
       </div>
     </div>
-  </div>
-</body>
-</html>
 
+    <button id="downloadBtn">Download PDF</button>
+
+    <script>
+      document
+        .getElementById("downloadBtn")
+        .addEventListener("click", function () {
+          const { jsPDF } = window.jspdf;
+          const resume = document.getElementById("resume");
+
+          html2canvas(resume, { scale: 2 }).then((canvas) => {
+            const imgData = canvas.toDataURL("image/png");
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = 210;
+            const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("Rohitash_Gar_Resume.pdf");
+          });
+        });
+    </script>
+  </body>
+</html>
