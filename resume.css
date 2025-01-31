@@ -69,11 +69,19 @@ p {
   font-size: 25px;
 }
 
+.project h3 a{
+  text-decoration: none;
+}
+
 .sidebar {
   flex: 1;
   background: #f8f9fa;
   padding: 15px;
   border-left: 3px solid #007bff;
+}
+
+.sidebar  a{
+  text-decoration: none;
 }
 
 ul {
